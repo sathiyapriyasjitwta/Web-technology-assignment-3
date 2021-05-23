@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+<meta charset="utf-8">
+<title>challenge program-3</title>
+<style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding:0;
+    }
+
+    body {
+      font-size: 19px;
+          }
+
+    header {
+      margin: 0;
+    }
+    .main {
+      position: relative;
+      margin-left: 1%;
+    }
+
+    .main img {
+      margin-left: 0%;
+      height: 390px;
+      width: auto;
+    }
+  #demo {
+position: absolute;
+  margin-left:60%;
+padding-bottom:200px;
+  transform: translate(-50%, -50%);
+  }
+
+    footer {
+      background: white;
+    }
+    footer p {
+      padding: 10px;
+    }
+    table{
+      color:darkorange;
+    }
+   
+</style>
+</head>
+
+<body>
+<header>
+<a href="#home">Home</a> |
+<a href="#places">Places</a> |
+<a href="#gallery">Gallery</a> |
+<a href="#search">Search</a> |
+<a href="#aboutus">AboutUs</a>|
+
+</header>
+<br>
+<section class="main">
+<h1>
+<B>Coutrallam Falls</B>
+</h1>
+<br><br>
+<img src=https://yatramantra.com/wp-content/uploads/2019/09/Kutralam_Falls-780x588.png "F5&F10">
+
+
+
+<p id="demo"></p>
+
+
+
+<br>
+<p>by <U><a href="#">1JT18IS051-SATHIYA PRIYA S</a></U></p>
+<br>
+<p>Coutrallam is a panchayat town situated at a mean elevation of 160 m (520 ft) on the Western Ghats in Tenkasi district of Tamil Nadu, India. Coutrallam Falls on Chittar River is a major tourist attraction.Courtallam is situated at the Western Ghats in Tenkasi District. The famous waterfalls on rocks and tiny droplets are sprinkled in the air. The water falls of Courtallam have medicinal value as they run through forest and herbs before their decent. The Courtallam is called as ‘Spa’ of South India.
+</p>
+<br>
+<p>Year : 2021</p>
+<p>Date : 22th May</p>
+<br>
+<br>
+<h2>Reviews</h2>
+<br>
+<p style="font-weight:bold; font-size:20px"> Nice Place </p>
+<table>
+<tr>
+<td> Vijay</td>
+<td> ⭐⭐⭐ </td>
+</tr>
+</table><br>
+<p>"waterfalls on rocks and tiny droplets are sprinkled in the air" </p>
+<br>
+<hr>
+<br>
+
+<p style="font-weight:bold; font-size:20px"> Enjoyable Place </p>
+<table>
+<tr>
+<td>Shiva </td>
+<td> ⭐⭐⭐⭐ </td>
+</tr>
+</table><br>
+<p>"Best place for relaxing our mind"</p>
+<br>
+<hr><br>
+
+<p style="font-weight:bold; font-size:20px">Coutrallam Main Falls</p>
+<table>
+<tr>
+<td>SP</td>
+<td> ⭐⭐⭐⭐⭐  </td>
+</tr>
+</table><br>
+
+<p> "Beautiful place I have enjoyed a lot" </p>
+</section>
+<br>
+<section class="ending">
+<a href="#home">Home</a> |
+<a href="#places">Places</a> |
+<a href="#gallery">Gallery</a> |
+<a href="#aboutus">AboutUs</a> |
+
+</section>
+
+<footer>
+<p><i>Copyright &#169 2021 SP</i></p>
+</footer>
+<script>
+var var1 = setInterval(inTimer, 500);
+var fs = 5; //font size
+var ids = document.getElementById("demo");
+function inTimer()
+{
+ids.innerHTML = 'Coutrallam';
+ids.setAttribute('style', "font-size: " + fs + "px; color: red");
+fs += 5;
+if (fs >= 100)
+{
+clearInterval(var1); //paused
+var2 = setInterval(deTimer, 500);
+
+}
+}
+function deTimer() //fs = 50px
+{
+fs -= 5;
+ids.innerHTML = 'Main Falls';
+ids.setAttribute('style', "font-size: " + fs + "px; color:blue");
+if (fs == 15)
+{
+clearInterval(var2); //paused
+var1 = setInterval(inTimer, 500);
+}
+}
+</script>
+</body>
+
+</html>
